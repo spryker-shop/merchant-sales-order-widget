@@ -28,17 +28,11 @@ class MerchantOrderReferenceForItemsWidget extends AbstractWidget
         $this->addMerchantOrderReferencesParameter($itemTransfers->getArrayCopy());
     }
 
-    /**
-     * @return string
-     */
     public static function getName(): string
     {
         return 'MerchantOrderReferenceForItemsWidget';
     }
 
-    /**
-     * @return string
-     */
     public static function getTemplate(): string
     {
         return '@MerchantSalesOrderWidget/views/merchant-order-reference-for-items/merchant-order-reference-for-items.twig';
